@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import uuid from 'uuid/v4';
-import Recipe from './components/Recipe'
-import AddRecipeForm from './components/AddRecipeForm'
-import EditRecipeForm from './components/EditRecipeForm'
+import Recipe from './components/Recipe';
+import AddRecipeForm from './components/AddRecipeForm';
+import EditRecipeForm from './components/EditRecipeForm';
+import Storage from './utils/Storage';
 
 interface IRecipe {
   id: string;
@@ -12,7 +13,7 @@ interface IRecipe {
 
 const App = () => {
 
-  const recipesData: IRecipe[] = JSON.parse(localStorage.getItem('recipes') || '[]');
+  const recipesData: IRecipe[] = Storage.get('recipes');
   const [recipes, setRecipes] = useState<IRecipe[]>(recipesData);
   const [editing, setEditing] = useState<Boolean>(false);
   const [creating, setCreating] = useState<Boolean>(false);
@@ -23,7 +24,7 @@ const App = () => {
   });
 
   useEffect(() => {
-    localStorage.setItem('recipes', JSON.stringify(recipes));
+    Storage.set('recipes', recipes);
   }, [recipes]);
 
   const createRecipe = (recipe: IRecipe) => {
