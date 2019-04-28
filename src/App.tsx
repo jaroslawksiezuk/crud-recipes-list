@@ -55,7 +55,7 @@ const App = () => {
     <div className="recipesList">
       <div className="recipesList__content">
         {recipes.map(value => {
-          return <Recipe key={value.id} recipe={value} editRecipe={editRecipe} updateRecipe={updateRecipe} destroyRecipe={destroyRecipe} />
+          return <Recipe key={value.id} recipe={value} editRecipe={editRecipe} destroyRecipe={destroyRecipe} />
         })}
       </div>
       <button onClick={() => setCreating(true)} className="btn btn--primary btn--big">Add Recipe</button>

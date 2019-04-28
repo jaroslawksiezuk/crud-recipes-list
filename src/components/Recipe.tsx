@@ -9,7 +9,6 @@ interface IRecipe {
 interface IRecipeProps {
     recipe: IRecipe;
     editRecipe: (recipe: IRecipe) => void;
-    updateRecipe: (id: String, recipe: IRecipe) => void;
     destroyRecipe: (id: String) => void;
 }
 
