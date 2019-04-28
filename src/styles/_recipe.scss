@@ -1,0 +1,22 @@
+.recipe {
+  margin-bottom: 5px;
+  border-radius: $radius;
+  border: 1px solid $colorDefaultDark;
+
+  &__title {
+    color: $colorSuccess;
+    background: $colorSuccessLight;
+    padding: 10px;
+    font-weight: $fontBold;
+
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  &__content {
+    padding: 10px;
+    background-color: $colorLight;
+  }
+}

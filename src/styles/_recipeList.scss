@@ -1,0 +1,12 @@
+.recipesList {
+  max-width: $breakpoint;
+  margin: 15px auto;
+
+  &__content {
+    background: $colorDefault;
+    border: 1px solid $colorDefaultDark;
+    border-radius: $radius;
+    padding: 15px;
+    margin-bottom: 15px;
+  }  
+}

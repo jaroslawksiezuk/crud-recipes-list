@@ -1,0 +1,35 @@
+.btn {
+  color: $colorDark;
+  background-color: $colorLight;
+  display: inline-block;
+  padding: 6px 12px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid;
+  border-color: $colorDefaultDark;
+  border-radius: $radius;
+  margin-right: 6px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &--danger {
+    border-color: $colorDanger;
+    background: $colorDanger;
+    color: $colorLight;
+    font-weight: $fontSemiBold;
+  }
+
+  &--primary {
+    border-color: $colorPrimary;
+    background: $colorPrimary;
+    color: $colorLight;
+    font-weight: $fontSemiBold;
+  }
+
+  &--big {
+    font-size: 16px;
+    padding: 12px 18px;
+  }
+}
