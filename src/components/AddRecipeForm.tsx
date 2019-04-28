@@ -29,16 +29,16 @@ const AddRecipeForm = (props: IRecipeFormProps) => {
     return (
         <form onSubmit={() => createRecipe(recipe)} className="recipeForm">
             <div className="recipeForm__header">
-                Add Recipe
+                Add a Recipe
             </div>
             <div className="recipeForm__content">
                 <div>
                     <label>Recipe</label>
-                    <input value={recipe.title} onChange={handleChange} name="title" />
+                    <input value={recipe.title} onChange={handleChange} name="title" placeholder="Recipe Name" />
                 </div>
                 <div>
                     <label>Ingredients</label>
-                    <textarea value={recipe.ingredients} onChange={handleChange} name="ingredients" />
+                    <textarea value={recipe.ingredients} onChange={handleChange} name="ingredients" placeholder="Enter Ingredients,Separated,By Commas" />
                 </div>
             </div>
             <div className="recipeForm__footer">
