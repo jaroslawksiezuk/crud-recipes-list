@@ -4,9 +4,9 @@ This project is a simple recipes list management application.
 
 ## Getting Started
 
-Install dependencies: `yarn install`
-Run `yarn start` to run the app in the development mode
-Run `yarn build` to build the app for production to the `build` folder
+- Install dependencies: `yarn install`
+- Run `yarn start` to run the app in the development mode
+- Run `yarn build` to build the app for production to the `build` folder
 
 ## More
 
