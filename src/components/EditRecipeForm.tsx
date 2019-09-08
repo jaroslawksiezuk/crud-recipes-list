@@ -1,18 +1,13 @@
 import React, { useState } from 'react';
+import { IRecipe } from './Recipe';
 
-interface IRecipe {
-    id: string;
-    title: string;
-    ingredients: string;
-}
-
-interface IRecipeFormProps {
+interface IRecipeEditFormProps {
     currentRecipe: IRecipe;
     updateRecipe: (id: String, recipe: IRecipe) => void;
     close: () => void;
 }
 
-const EditRecipeForm = (props: IRecipeFormProps) => {
+const EditRecipeForm = (props: IRecipeEditFormProps) => {
 
     const { currentRecipe, updateRecipe, close } = props;
 

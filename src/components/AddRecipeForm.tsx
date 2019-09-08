@@ -1,17 +1,12 @@
 import React, { useState } from 'react';
+import { IRecipe } from './Recipe';
 
-interface IRecipe {
-    id: string;
-    title: string;
-    ingredients: string;
-}
-
-interface IRecipeFormProps {
+interface IRecipeAddFormProps {
     createRecipe: (recipe: IRecipe) => void;
     close: () => void;
 }
 
-const AddRecipeForm = (props: IRecipeFormProps) => {
+const AddRecipeForm = (props: IRecipeAddFormProps) => {
 
     const { createRecipe, close } = props;
 

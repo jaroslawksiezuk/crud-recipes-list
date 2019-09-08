@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 
-interface IRecipe {
+export interface IRecipe {
     id: string;
     title: string;
     ingredients: string;
 }
 
-interface IRecipeProps {
+export interface IRecipeProps {
     recipe: IRecipe;
     editRecipe: (recipe: IRecipe) => void;
     destroyRecipe: (id: String) => void;

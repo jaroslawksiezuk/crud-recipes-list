@@ -1,15 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import uuid from 'uuid/v4';
-import Recipe from './components/Recipe';
+import Recipe, { IRecipe } from './components/Recipe';
 import AddRecipeForm from './components/AddRecipeForm';
 import EditRecipeForm from './components/EditRecipeForm';
 import Storage from './utils/Storage';
-
-interface IRecipe {
-  id: string;
-  title: string;
-  ingredients: string;
-}
 
 const App = () => {
 
